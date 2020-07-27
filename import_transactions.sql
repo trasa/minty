@@ -1,3 +1,5 @@
+truncate mint_transactions;
+
 copy mint_transactions (
     transaction_date,
     description,
@@ -9,7 +11,7 @@ copy mint_transactions (
     labels,
     notes
     ) 
-    from '/users/trasa/Downloads/transactions.csv'
+    from '/users/trasa/prj/minty/.secret/transactions.csv'
     delimiter ','
     csv header;
  
